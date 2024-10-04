@@ -1,45 +1,45 @@
 :root {
-    --primary-dark-color: #121212;
-    --lighter-dark-primary-color: #1D1D1D;
-    --primary-light-color: #FFF;
-    --success-color: #42BE65;
-    --abnormal-color: #FA4D56;
-    --warning-color: #F1C21B;
-    --sky-color: #C9E6E3;
-    --darker-sky-color: #1B3533;
-    --sunset-color: #FFB598;
-    --darker-sunset-color: #591D00;
-    --rose-color: #FFB0CD;
-    --darker-rose-color: #5D1138;
-    --neutral-color: #C7C6C5;
-    --darker-neutral-color: #2F2F2F;
-    --text-color: #E1E1E1;
+  --primary-dark-color: #121212;
+  --lighter-dark-primary-color: #1d1d1d;
+  --primary-light-color: #fff;
+  --success-color: #42be65;
+  --abnormal-color: #fa4d56;
+  --warning-color: #f1c21b;
+  --sky-color: #c9e6e3;
+  --darker-sky-color: #1b3533;
+  --sunset-color: #ffb598;
+  --darker-sunset-color: #591d00;
+  --rose-color: #ffb0cd;
+  --darker-rose-color: #5d1138;
+  --neutral-color: #c7c6c5;
+  --darker-neutral-color: #2f2f2f;
+  --text-color: #e1e1e1;
 
-    --spacing-xs: 0.25rem;
-    --spacing-sm: 0.5rem;
-    --spacing-md: 0.75rem;
-    --spacing-lg: 1rem;
-    --spacing-xl: 1.5rem;
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 0.75rem;
+  --spacing-lg: 1rem;
+  --spacing-xl: 1.5rem;
 
-    --border-radius-s: 4px;
-    --border-radius-m: 12px;
-    --border-radius-l: 24px;
-    --border-radius-full: 1000px;
+  --border-radius-s: 4px;
+  --border-radius-m: 12px;
+  --border-radius-l: 24px;
+  --border-radius-full: 1000px;
 
-    --wrapper-width: 1168px;
+  --border-width-xs: 1px;
+  --border-color-theme: rgba(255, 255, 255, 0.1);
 
-    --font-size-small: 18px;
-    --font-size-body: 20px;
-    --font-size-h1: 36px;
-    --font-size-h2: 32px;
-    --font-size-h3: 28px;
-    --font-size-h4: 24px;
+  --wrapper-width: 1168px;
 
-    --line-height: 133%;
+  --font-size-small: 18px;
+  --font-size-body: 20px;
+  --font-size-h1: 36px;
+  --font-size-h2: 32px;
+  --font-size-h3: 28px;
+  --font-size-h4: 24px;
 
-    --font-weight-normal: 400;
-    --font-weight-bold: 700;
+  --line-height: 133%;
 
-
-
-  }
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+}

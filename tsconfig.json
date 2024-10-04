@@ -7,15 +7,12 @@
       "@hooks/*": ["src/hooks/*"],
       "@utilities/*": ["src/utilities/*"],
       "@views": ["src/views/index.ts"],
-      "@layouts": ["src/layouts/index.ts"]
+      "@layouts": ["src/layouts/index.ts"],
+      "@icons": ["src/icons/index.ts"]
     },
     "jsx": "react-jsx",
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -31,10 +28,6 @@
     "noImplicitAny": false,
     "noFallthroughCasesInSwitch": true
   },
-  "include": [
-    "src/**/*",
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }

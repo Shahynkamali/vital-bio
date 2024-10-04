@@ -1,7 +1,13 @@
+import { Wrapper } from '@components';
 import type { FC } from 'react';
 import React from 'react';
+import { Sidebar } from '@layouts';
 
 const TestResultsView: FC = () => {
-  return <div>coundown</div>;
+  return (
+    <Wrapper>
+      <Sidebar />
+    </Wrapper>
+  );
 };
 export { TestResultsView };
