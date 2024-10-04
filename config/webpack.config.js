@@ -322,7 +322,8 @@ module.exports = function (webpackEnv) {
         '@components': path.resolve(__dirname, '../src/components'),  
         '@components/': path.resolve(__dirname, '../src/components/'),   
         '@hooks': path.resolve(__dirname, '../src/hooks'),   
-        '@utilities': path.resolve(__dirname, '../src/utilities'),       
+        '@utilities': path.resolve(__dirname, '../src/utilities'),    
+        '@views': path.resolve(__dirname, '../src/views'),     
       },
       plugins: [
         // Prevents users from importing files from outside of src/ (or node_modules/).

@@ -5,7 +5,8 @@
       "@components": ["src/components"],
       "@components/*": ["src/components/*"],
       "@hooks/*": ["src/hooks/*"],
-      "@utilities/*": ["src/utilities/*"]
+      "@utilities/*": ["src/utilities/*"],
+      "@views": ["src/views/index.ts"]
     },
     "jsx": "react-jsx",
     "target": "es5",

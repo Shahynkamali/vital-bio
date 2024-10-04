@@ -1,0 +1,1 @@
+export { QualityControlChartView } from './QualityControlChartView';

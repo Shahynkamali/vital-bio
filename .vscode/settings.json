@@ -1,25 +1,33 @@
 {
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": "never",
-    "source.fixAll": "always",
-    "source.fixAll.eslint": "always"
-  },
-  "editor.formatOnSave": true,
-  
-  "[javascript]": {
-    "editor.formatOnSave": true
-  },
-  "[javascriptreact]": {
-    "editor.formatOnSave": true
-  },
-  "[typescript]": {
-    "editor.formatOnSave": true
-  },
-  "[typescriptreact]": {
-    "editor.formatOnSave": true
-  },
-  "typescript.preferences.importModuleSpecifier": "relative",
-  "typescript.preferences.importModuleSpecifierEnding": "auto",
-  "javascript.preferences.importModuleSpecifier": "relative",
-  "javascript.preferences.importModuleSpecifierEnding": "auto",
-}
+     "editor.codeActionsOnSave": {
+       "source.fixAll.eslint": "explicit"
+     },
+     "editor.formatOnSave": true,
+     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+     "[javascript]": {
+       "editor.formatOnSave": true,
+       "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+     },
+     "[javascriptreact]": {
+       "editor.formatOnSave": true,
+       "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+     },
+     "[typescript]": {
+       "editor.formatOnSave": true,
+       "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+     },
+     "[typescriptreact]": {
+       "editor.formatOnSave": true,
+       "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+     },
+     "typescript.preferences.importModuleSpecifier": "relative",
+     "typescript.preferences.importModuleSpecifierEnding": "auto",
+     "javascript.preferences.importModuleSpecifier": "relative",
+     "javascript.preferences.importModuleSpecifierEnding": "auto",
+     "eslint.validate": [
+       "javascript",
+       "javascriptreact",
+       "typescript",
+       "typescriptreact"
+     ]
+   }

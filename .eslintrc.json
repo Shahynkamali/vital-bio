@@ -1,9 +1,11 @@
 {
+  "root": true,
   "extends": [
     "airbnb",
     "airbnb/hooks",
     "airbnb-typescript",
-    "react-app"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -13,17 +15,14 @@
       "jsx": true
     }
   },
-  "plugins": ["@typescript-eslint"],
-  "overrides": [
-    {
-      "files": ["**/*.ts", "**/*.tsx"],
-      "extends": [
-        "plugin:@typescript-eslint/recommended"
-      ]
-    }
-  ],
+  "plugins": ["@typescript-eslint", "react", "prettier"],
   "rules": {
     "@typescript-eslint/comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "never",
       "generics": "always"
     }],
     "no-param-reassign": "off",
@@ -44,10 +43,19 @@
       {
         "prefer": "type-imports"
       }
-    ]
+    ],
+    "prettier/prettier": ["error", {
+      "singleQuote": true,
+      "trailingComma": "es5"
+    }]
   },
   "env": {
     "browser": true,
     "es2021": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
