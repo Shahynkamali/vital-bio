@@ -1,0 +1,10 @@
+.box {
+    background-color: var(--lighter-dark-primary-color);
+    border-radius: var(--border-radius-m);
+
+    &.--padding-xs { padding: var(--spacing-xs); }
+    &.--padding-sm { padding: var(--spacing-sm); }
+    &.--padding-md { padding: var(--spacing-md); }
+    &.--padding-lg { padding: var(--spacing-lg); }
+    &.--padding-xl { padding: var(--spacing-xl); }
+  }

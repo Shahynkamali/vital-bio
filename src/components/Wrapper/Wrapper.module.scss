@@ -1,0 +1,9 @@
+.wrapper {
+    width: var(--wrapper-width);
+    padding: var(--spacing-xl) var(--spacing-lg);
+    margin: 0 auto;
+
+    &.--fullWidth {
+      width: 100%;
+    }
+  }

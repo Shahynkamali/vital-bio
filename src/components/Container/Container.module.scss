@@ -1,0 +1,17 @@
+.parentContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &.--bg-primary-dark {
+      background-color: var(--primary-dark-color);
+    }
+
+    &.--bg-lighter-dark-primary {
+      background-color: var(--lighter-dark-primary-color);
+    }
+
+    &.--bg-primary-light {
+      background-color: var(--primary-light-color);
+    }
+  }

@@ -1,0 +1,59 @@
+.text {
+    font-family: "Libre Franklin", sans-serif;
+    font-style: normal;
+    line-height: var(--line-height);
+
+    &.--variant-small {
+      font-size: var(--font-size-small);
+      font-weight: var(--font-weight-normal);
+    }
+
+    &.--variant-body {
+      font-size: var(--font-size-body);
+      font-weight: var(--font-weight-normal);
+    }
+
+    &.--variant-h4 {
+      font-size: var(--font-size-h4);
+      font-weight: var(--font-weight-bold);
+    }
+
+    &.--variant-h3 {
+        font-size: var(--font-size-h3);
+        font-weight: var(--font-weight-bold);
+      }
+
+    &.--variant-h2 {
+      font-size: var(--font-size-h2);
+      font-weight: var(--font-weight-bold);
+    }
+
+    &.--variant-h1 {
+      font-size: var(--font-size-h1);
+      font-weight: var(--font-weight-bold);
+    }
+
+    &.--color-default {
+      color: var(--text-color);
+    }
+
+    &.--color-abnormal {
+      color: var(--color-abnormal);
+    }
+
+    &.--color-optimal {
+      color: var(--color-optimal);
+    }
+
+    &.--align-left {
+      text-align: left;
+    }
+
+    &.--align-center {
+      text-align: center;
+    }
+
+    &.--align-right {
+      text-align: right;
+    }
+  }
