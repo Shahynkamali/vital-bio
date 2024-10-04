@@ -1,9 +1,10 @@
 import React from 'react';
-import { Wrapper, Column, Columns, Text, Box } from '@components';
+import { Wrapper, Column, Columns } from '@components';
 import type { FC } from 'react';
 import { Sidebar } from '@layouts';
 import { PatientInformationBox } from 'src/views/TestResultsView/PatientInformationBox';
 import { RangeBox } from 'src/views/TestResultsView/RangeBox';
+import { TestResults } from 'src/views/TestResultsView/TestResults/TestResults';
 import testresults from './testresult.json';
 
 const TestResultsView: FC = () => {
@@ -45,18 +46,7 @@ const TestResultsView: FC = () => {
             </Columns>
           </Column>
           <Column width="auto">
-            <Box>
-              <Text>omne</Text>
-            </Box>
-            <Box>
-              <Text>omne</Text>
-            </Box>
-            <Box>
-              <Text>omne</Text>
-            </Box>
-            <Box>
-              <Text>omne</Text>
-            </Box>
+            <TestResults testResults={testresults.testResults} />
           </Column>
         </Columns>
       </Wrapper>

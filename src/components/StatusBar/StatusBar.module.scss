@@ -1,0 +1,38 @@
+.statusBar {
+  width: 100%;
+}
+
+.barContainer {
+  position: relative;
+  height: 16px;
+  background-color: var(--darker-neutral-color, #2f2f2f);
+
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  transition: width 0.3s ease;
+  border-radius: 4px;
+}
+
+.success {
+  background-color: var(--success-color);
+}
+
+.error {
+  background-color: var(--abnormal-color);
+}
+
+.indicator {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 2px;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+}

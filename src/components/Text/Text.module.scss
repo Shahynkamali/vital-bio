@@ -47,11 +47,11 @@
   }
 
   &.--color-abnormal {
-    color: var(--color-abnormal);
+    color: var(--abnormal-color);
   }
 
   &.--color-optimal {
-    color: var(--color-optimal);
+    color: var(--success-color);
   }
 
   &.--align-left {
