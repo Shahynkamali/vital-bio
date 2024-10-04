@@ -1,0 +1,1 @@
+export { PatientInformationBox } from './PatientInformationBox';

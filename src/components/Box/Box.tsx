@@ -8,7 +8,7 @@ interface Props extends PropsWithChildren<HTMLProps<HTMLDivElement>> {
   padding?: Padding;
 }
 
-const Box: FC<Props> = ({ children, className, padding = 'md', ...rest }) => (
+const Box: FC<Props> = ({ children, className, padding = 'xl', ...rest }) => (
   <div
     className={classNames(
       styles.box,

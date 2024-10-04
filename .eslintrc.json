@@ -17,6 +17,7 @@
   },
   "plugins": ["@typescript-eslint", "react", "prettier"],
   "rules": {
+    "react/no-array-index-key": "off",
     "no-nested-ternary": "off",
     "@typescript-eslint/triple-slash-reference": "off",
     "@typescript-eslint/comma-dangle": "off",

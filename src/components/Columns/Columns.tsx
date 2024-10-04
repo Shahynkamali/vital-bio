@@ -2,8 +2,6 @@ import React, { type FC, type HTMLProps, type PropsWithChildren } from 'react';
 import classNames from 'classnames';
 import styles from './Columns.module.scss';
 
-type Gap = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-
 export type JustifyContent =
   | 'flex-start'
   | 'center'
@@ -22,7 +20,6 @@ export type AlignItems =
 export type FlexDirection = 'column' | 'row';
 
 interface Props extends PropsWithChildren<HTMLProps<HTMLDivElement>> {
-  gap?: Gap;
   justifyContent?: JustifyContent;
   alignItems?: AlignItems;
   direction?: FlexDirection;
@@ -31,7 +28,6 @@ interface Props extends PropsWithChildren<HTMLProps<HTMLDivElement>> {
 const Columns: FC<Props> = ({
   children,
   className,
-  gap = 'md',
   justifyContent = 'flex-start',
   alignItems = 'stretch',
   direction = 'row',
@@ -40,7 +36,6 @@ const Columns: FC<Props> = ({
   <div
     className={classNames(
       styles.columns,
-      styles[`--gap-${gap}`],
       styles[`--justify-${justifyContent}`],
       styles[`--align-${alignItems}`],
       styles[`--direction-${direction}`],

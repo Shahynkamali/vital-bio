@@ -1,0 +1,81 @@
+{
+  "patient": {
+    "name": "James Dokidis",
+    "patientId": "40777451",
+    "dateOfBirth": "1961-09-20",
+    "collectionTime": "2024-09-12T20:03:00Z"
+  },
+  "summary": {
+    "inRange": 51,
+    "outOfRange": 2,
+    "invalid": 3
+  },
+  "testResults": [
+    {
+      "name": "Triglycerides",
+      "category": "Heart health",
+      "value": 246,
+      "unit": "mg/dL",
+      "range": {
+        "min": 0,
+        "max": 149
+      },
+      "status": "Out of range"
+    },
+    {
+      "name": "Alanine Aminotransferase (ALT)",
+      "category": "Risk of liver damage",
+      "value": 59,
+      "unit": "IU/L",
+      "range": {
+        "min": 0,
+        "max": 44
+      },
+      "status": "Out of range"
+    },
+    {
+      "name": "High-Density Cholesterol (HDL)",
+      "category": "Heart health",
+      "value": 43,
+      "unit": "mg/dL",
+      "range": {
+        "min": 39,
+        "max": null
+      },
+      "status": "In range"
+    },
+    {
+      "name": "Thyroid Stimulating Hormone (TSH)",
+      "category": "Thyroid health",
+      "value": 1.59,
+      "unit": "uIU/mL",
+      "range": {
+        "min": 0.45,
+        "max": 4.5
+      },
+      "status": "In-range"
+    },
+    {
+      "name": "Blood Urea Nitrogen",
+      "category": "Kidney health",
+      "value": 12,
+      "unit": "mg/dL",
+      "range": {
+        "min": 6,
+        "max": 20
+      },
+      "status": "In-range"
+    },
+    {
+      "name": "Creatinine",
+      "category": "Kidney health",
+      "value": 0.95,
+      "unit": "mg/dL",
+      "range": {
+        "min": 0.76,
+        "max": 1.27
+      },
+      "status": "In-range"
+    }
+  ]
+}

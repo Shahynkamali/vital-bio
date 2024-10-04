@@ -19,7 +19,15 @@ export type AlignItems =
 
 export type FlexDirection = 'column' | 'row';
 
-export type ColumnWidth = 'auto' | '25' | '33' | '50' | '66' | '75' | '100';
+export type ColumnWidth =
+  | 'auto'
+  | '25'
+  | '33'
+  | '40'
+  | '50'
+  | '66'
+  | '75'
+  | '100';
 
 interface Props extends PropsWithChildren<HTMLProps<HTMLDivElement>> {
   justifyContent?: JustifyContent;

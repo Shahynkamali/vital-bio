@@ -2,13 +2,13 @@ import React, { type FC, type HTMLProps } from 'react';
 import classNames from 'classnames';
 import styles from './Text.module.scss';
 
-type TextVariant = 'small' | 'body' | 'h4' | 'h3' | 'h2' | 'h1';
-type TextColor = 'default' | 'abnormal' | 'optimal';
+type TextVariant = 'small' | 'body' | 'body-bold' | 'h4' | 'h3' | 'h2' | 'h1';
+type TextColor = 'default' | 'light' | 'abnormal' | 'optimal';
 type TextAlign = 'left' | 'center' | 'right';
-type SymanticTextType = 'span' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+type SemanticTextType = 'span' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 
 interface Props extends Omit<HTMLProps<HTMLSpanElement>, 'as' | 'ref'> {
-  as?: SymanticTextType;
+  as?: SemanticTextType;
   variant?: TextVariant;
   color?: TextColor;
   align?: TextAlign;

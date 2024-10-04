@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { type FC } from 'react';
 import { Button } from '@components';
 import { HomeIcon, SettingsIcon, LabProfileIcon, LabIcon } from '@icons';
 import styles from './Sidebar.module.scss';
 
-const Sidebar: React.FC = () => {
+const Sidebar: FC = () => {
   return (
     <aside className={styles.sidebar}>
       <div className={styles.topButtons}>

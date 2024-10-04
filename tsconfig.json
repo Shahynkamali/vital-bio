@@ -5,10 +5,10 @@
       "@components": ["src/components/index.ts"],
       "@components/*": ["src/components/*"],
       "@hooks/*": ["src/hooks/*"],
-      "@utilities/*": ["src/utilities/*"],
       "@views": ["src/views/index.ts"],
       "@layouts": ["src/layouts/index.ts"],
-      "@icons": ["src/icons/index.ts"]
+      "@icons": ["src/icons/index.ts"],
+      "@utils": ["src/utils/index.ts"]
     },
     "jsx": "react-jsx",
     "target": "es5",

@@ -38,7 +38,7 @@ const Navigation: FC = () => {
             color="default"
             className={styles.logo}
           >
-            Your App Name
+            Vital Bio Dashboard
           </Text>
         </Column>
         <Column direction={isTablet ? 'column' : 'row'} width="auto">
