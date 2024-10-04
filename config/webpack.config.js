@@ -319,11 +319,11 @@ module.exports = function (webpackEnv) {
           'scheduler/tracing': 'scheduler/tracing-profiling',
         }),
         ...(modules.webpackAliases || {}),
-        '@components': path.resolve(__dirname, '../src/components'),  
-        '@components/': path.resolve(__dirname, '../src/components/'),   
-        '@hooks': path.resolve(__dirname, '../src/hooks'),   
-        '@utilities': path.resolve(__dirname, '../src/utilities'),    
-        '@views': path.resolve(__dirname, '../src/views'),     
+        '@components': path.resolve(__dirname, '../src/components'),
+        '@components/': path.resolve(__dirname, '../src/components/'),
+        '@hooks': path.resolve(__dirname, '../src/hooks'),
+        '@utilities': path.resolve(__dirname, '../src/utilities'),
+        '@views': path.resolve(__dirname, '../src/views'),
       },
       plugins: [
         // Prevents users from importing files from outside of src/ (or node_modules/).
@@ -424,7 +424,7 @@ module.exports = function (webpackEnv) {
                     },
                   ],
                 ],
-                
+
                 plugins: [
                   isEnvDevelopment &&
                     shouldUseReactRefresh &&
@@ -458,7 +458,7 @@ module.exports = function (webpackEnv) {
                 cacheDirectory: true,
                 // See #6846 for context on why cacheCompression is disabled
                 cacheCompression: false,
-                
+
                 // Babel sourcemaps are needed for debugging into node_modules
                 // code.  Without the options below, debuggers like VSCode
                 // show incorrect code and set breakpoints on the wrong lines.
@@ -524,10 +524,6 @@ module.exports = function (webpackEnv) {
                 },
                 'sass-loader'
               ),
-              // Don't consider CSS imports dead code even if the
-              // containing package claims to have no side effects.
-              // Remove this when webpack adds a warning or an error for this.
-              // See https://github.com/webpack/webpack/issues/6571
               sideEffects: true,
             },
             // Adds support for CSS Modules, but using SASS

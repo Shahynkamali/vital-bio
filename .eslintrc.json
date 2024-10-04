@@ -25,6 +25,7 @@
       "functions": "never",
       "generics": "always"
     }],
+    "@typescript-eslint/triple-slash-reference": "off",
     "no-param-reassign": "off",
     "consistent-return": "off",
     "react/require-default-props": "off",
