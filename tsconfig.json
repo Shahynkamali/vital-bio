@@ -2,11 +2,12 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@components": ["src/components"],
+      "@components": ["src/components/index.ts"],
       "@components/*": ["src/components/*"],
       "@hooks/*": ["src/hooks/*"],
       "@utilities/*": ["src/utilities/*"],
-      "@views": ["src/views/index.ts"]
+      "@views": ["src/views/index.ts"],
+      "@layouts": ["src/layouts/index.ts"]
     },
     "jsx": "react-jsx",
     "target": "es5",
@@ -34,6 +35,6 @@
     "src/**/*",
   ],
   "exclude": [
-    "node_modules"  
+    "node_modules"
   ]
 }

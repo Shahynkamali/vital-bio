@@ -9,17 +9,20 @@ export type JustifyContent =
   | 'space-between'
   | 'space-around'
   | 'space-evenly';
+
 export type AlignItems =
   | 'flex-start'
   | 'center'
   | 'flex-end'
   | 'stretch'
   | 'baseline';
+
 export type FlexDirection = 'column' | 'row';
+
 export type ColumnWidth = 'auto' | '25' | '33' | '50' | '66' | '75' | '100';
 
 interface Props extends PropsWithChildren<HTMLProps<HTMLDivElement>> {
-  justifyContent: JustifyContent;
+  justifyContent?: JustifyContent;
   alignItems?: AlignItems;
   direction?: FlexDirection;
   isFullHeight?: boolean;
