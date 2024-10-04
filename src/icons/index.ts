@@ -6,6 +6,7 @@ export { LabIcon } from './LabIcon';
 export { LabProfileIcon } from './LabProfileIcon';
 export { SearchIcon } from './SearchIcon';
 export { SettingsIcon } from './SettingsIcon';
+export { CheckMarkIcon } from './CheckMarkIcon';
 
 export interface IconProps {
   width?: number;

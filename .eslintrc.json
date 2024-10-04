@@ -17,7 +17,8 @@
   },
   "plugins": ["@typescript-eslint", "react", "prettier"],
   "rules": {
-    " no-else-return": "off",
+    "no-plusplus": "off",
+    "no-else-return": "off",
     "react/no-array-index-key": "off",
     "no-nested-ternary": "off",
     "@typescript-eslint/triple-slash-reference": "off",

@@ -2,7 +2,7 @@ import React from 'react';
 import { Column, Columns, Text, Box, StatusBar } from '@components';
 import type { FC } from 'react';
 import { getStatusColor } from '@utils';
-import styles from './TestResults.module.scss'; // We'll create this file next
+import styles from './TestResults.module.scss';
 
 interface TestResult {
   name: string;
