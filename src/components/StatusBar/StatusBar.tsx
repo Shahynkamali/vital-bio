@@ -7,10 +7,9 @@ interface Props {
   min: number;
   max: number | null;
   value: number;
-  unit: string;
 }
 
-const StatusBar: React.FC<Props> = ({ min, max, value, unit }) => {
+const StatusBar: React.FC<Props> = ({ min, max, value }) => {
   const isInRange = max === null ? value >= min : value >= min && value <= max;
   const barColor = isInRange ? styles.success : styles.error;
 
@@ -35,14 +34,10 @@ const StatusBar: React.FC<Props> = ({ min, max, value, unit }) => {
       </div>
       <div className={styles.labels}>
         <Text variant="small" color="light">
-          {min}
+          {value}
         </Text>
-        <Text
-          variant="body"
-          color={isInRange ? 'optimal' : 'abnormal'}
-          align="right"
-        >
-          {value} {unit}
+        <Text variant="small" color="light">
+          {max}
         </Text>
       </div>
     </div>

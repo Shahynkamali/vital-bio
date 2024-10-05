@@ -34,5 +34,5 @@
 .labels {
   display: flex;
   justify-content: space-between;
-  margin-top: 4px;
+  margin-top: var(--spacing-sm);
 }

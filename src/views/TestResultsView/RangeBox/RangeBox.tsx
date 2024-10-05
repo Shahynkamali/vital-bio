@@ -17,9 +17,10 @@ const colorMap = {
 };
 
 const RangeBox: FC<Props> = ({ color, count, children }) => {
+  const size = count < 5 ? 8 : 12;
   const renderIcons = () =>
     Array.from({ length: count }).map((_, index) => (
-      <CircleIcon key={index} color={colorMap[color]} width={8} height={8} />
+      <CircleIcon key={index} color={colorMap[color]} width={size} height={8} />
     ));
 
   return (

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Column, Columns, Wrapper } from '@components';
 import type { FC } from 'react';
 import { ButtonsBar, Sidebar } from '@layouts';
@@ -11,15 +11,22 @@ import testresults from './testresult.json';
 
 const TestResultsView: FC = () => {
   const breakpoints = useBreakpoints();
-
   const isTablet = breakpoints.lg.lessThan;
+
+  const [filteredTestResults, setFilteredTestResults] = useState(
+    testresults.testResults
+  );
 
   const handleBackClick = () => {
     // Handle back navigation
   };
 
   const handleSearch = (value: string) => {
-    console.log(value);
+    const lowercasedValue = value.toLowerCase();
+    const filtered = testresults.testResults.filter((test) =>
+      test.name.toLowerCase().includes(lowercasedValue)
+    );
+    setFilteredTestResults(filtered);
   };
 
   const handleFilter = () => {
@@ -33,10 +40,11 @@ const TestResultsView: FC = () => {
   const handleExport = () => {
     // Handle export action
   };
+
   return (
     <Wrapper>
       <Sidebar />
-      <Columns direction="column">
+      <Columns backgroundColor="primary-dark" direction="column">
         <Column width="100">
           <ButtonsBar
             onBackClick={handleBackClick}
@@ -80,7 +88,7 @@ const TestResultsView: FC = () => {
             </Columns>
           </Column>
           <Column width={isTablet ? '75' : 'auto'}>
-            <TestResults testResults={testresults.testResults} />
+            <TestResults testResults={filteredTestResults} />
           </Column>
         </Columns>
       </Columns>

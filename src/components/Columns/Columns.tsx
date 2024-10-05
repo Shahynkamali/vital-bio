@@ -2,6 +2,11 @@ import React, { type FC, type HTMLProps, type PropsWithChildren } from 'react';
 import classNames from 'classnames';
 import styles from './Columns.module.scss';
 
+type BackgroundColor =
+  | 'primary-dark'
+  | 'lighter-dark-primary'
+  | 'primary-light';
+
 export type JustifyContent =
   | 'flex-start'
   | 'center'
@@ -24,6 +29,7 @@ interface Props extends PropsWithChildren<HTMLProps<HTMLDivElement>> {
   alignItems?: AlignItems;
   direction?: FlexDirection;
   hasPadding?: boolean;
+  backgroundColor?: BackgroundColor;
 }
 
 const Columns: FC<Props> = ({
@@ -32,6 +38,7 @@ const Columns: FC<Props> = ({
   justifyContent = 'flex-start',
   alignItems = 'stretch',
   direction = 'row',
+  backgroundColor,
   hasPadding,
   ...rest
 }) => (
@@ -42,6 +49,7 @@ const Columns: FC<Props> = ({
       styles[`--justify-${justifyContent}`],
       styles[`--align-${alignItems}`],
       styles[`--direction-${direction}`],
+      styles[`--bg-${backgroundColor}`],
       className
     )}
     {...rest}

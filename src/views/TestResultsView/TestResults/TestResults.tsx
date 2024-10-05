@@ -28,7 +28,7 @@ const TestResults: FC<Props> = ({ testResults }) => {
           <Column key={index} width="100">
             <Box>
               <Columns>
-                <Column>
+                <Column className={styles.margin}>
                   <Columns>
                     <Column width="75">
                       <Text variant="h4">{result.name}</Text>
@@ -63,7 +63,6 @@ const TestResults: FC<Props> = ({ testResults }) => {
                   min={result.range.min}
                   max={result.range.max || result.value * 1.5}
                   value={result.value}
-                  unit={result.unit}
                 />
               </Columns>
             </Box>
