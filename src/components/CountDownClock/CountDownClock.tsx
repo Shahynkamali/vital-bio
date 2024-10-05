@@ -1,21 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import { CheckMarkIcon } from '@icons'; // Ensure this path is correct
+import React, { useState, useEffect, type FC } from 'react';
+import { CheckMarkIcon } from '@icons';
 
 interface CountDownClockProps {
   initialTime?: number;
   lastName?: string;
   dob?: string;
-  mrn?: string;
 }
 
-const CountDownClock: React.FC<CountDownClockProps> = ({
+const CountDownClock: FC<CountDownClockProps> = ({
   initialTime = 60,
   lastName = '',
   dob = '',
-  mrn = '',
 }) => {
-  const [timeLeft, setTimeLeft] = useState<number>(Math.max(0, initialTime));
-  const [isCompleted, setIsCompleted] = useState<boolean>(false);
+  const [timeLeft, setTimeLeft] = useState(Math.max(0, initialTime));
+  const [isCompleted, setIsCompleted] = useState(false);
   const size = 616;
   const tickCount = 60;
   const radius = size / 2 - 20;
@@ -123,7 +121,7 @@ const CountDownClock: React.FC<CountDownClockProps> = ({
             fontSize="18"
             fill={darkColor}
           >
-            {`${lastName} • ${mrn} • ${dob}`}
+            {`${lastName} • ${dob}`}
           </text>
         </g>
       ) : (

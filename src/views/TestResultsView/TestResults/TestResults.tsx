@@ -41,7 +41,7 @@ const TestResults: FC<Props> = ({ testResults }) => {
                       width="25"
                       direction="row"
                     >
-                      <Column>
+                      <Column alignItems="flex-end">
                         <Text variant="body">
                           {result.value} {result.unit}
                         </Text>

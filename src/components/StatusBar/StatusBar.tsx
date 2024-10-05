@@ -28,7 +28,7 @@ const StatusBar: React.FC<Props> = ({ min, max, value, unit }) => {
         />
         <div
           className={styles.indicator}
-          style={{ left: `${Math.min(percentage, 100)}%` }}
+          style={{ left: `${Math.min(percentage, 98.5)}%` }}
         >
           <CircleIcon />
         </div>

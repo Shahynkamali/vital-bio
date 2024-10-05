@@ -22,16 +22,29 @@
 }
 
 .textButton {
+  display: flex;
+  padding: var(--spacing-lg);
+  align-items: center;
+  gap: var(--spacing-sm);
   border-radius: var(--border-radius-full);
-  color: var(--text-color);
-  padding: var(--spacing-sm) var(--spacing-lg);
+  color: var(--primary-light-color);
+  font-weight: 600;
+  font-size: var(--font-size-body);
   background: var(--darker-neutral-color);
 
   &:hover {
     background: var(--lighter-dark-primary-color);
   }
-}
 
+  &.inverted {
+    background: var(--primary-light-color);
+    color: var(--primary-dark-color);
+
+    &:hover {
+      background: color-mix(in srgb, var(--primary-light-color) 90%, black);
+    }
+  }
+}
 .color-sky {
   &.iconButton {
     background: var(--sky-color);

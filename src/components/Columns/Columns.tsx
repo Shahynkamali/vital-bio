@@ -23,6 +23,7 @@ interface Props extends PropsWithChildren<HTMLProps<HTMLDivElement>> {
   justifyContent?: JustifyContent;
   alignItems?: AlignItems;
   direction?: FlexDirection;
+  hasPadding?: boolean;
 }
 
 const Columns: FC<Props> = ({
@@ -31,11 +32,13 @@ const Columns: FC<Props> = ({
   justifyContent = 'flex-start',
   alignItems = 'stretch',
   direction = 'row',
+  hasPadding,
   ...rest
 }) => (
   <div
     className={classNames(
       styles.columns,
+      hasPadding ? styles.padding : null,
       styles[`--justify-${justifyContent}`],
       styles[`--align-${alignItems}`],
       styles[`--direction-${direction}`],

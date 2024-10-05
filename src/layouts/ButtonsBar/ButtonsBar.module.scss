@@ -1,0 +1,8 @@
+.margin {
+  margin-right: var(--spacing-sm);
+
+  @media (max-width: 1024px) {
+    margin-right: 0;
+    margin-bottom: var(--spacing-md);
+  }
+}

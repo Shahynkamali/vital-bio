@@ -8,7 +8,7 @@ const CountdownView: FC = () => {
     <Wrapper>
       <Columns justifyContent="center" alignItems="center">
         <Column width="100" justifyContent="center" alignItems="center">
-          <CountDownClock lastName="John" initialTime={6} dob="1990-12-01" />
+          <CountDownClock lastName="John" initialTime={10} dob="1990-12-01" />
         </Column>
       </Columns>
     </Wrapper>

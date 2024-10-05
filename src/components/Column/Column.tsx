@@ -21,6 +21,8 @@ export type FlexDirection = 'column' | 'row';
 
 export type ColumnWidth =
   | 'auto'
+  | '10'
+  | '20'
   | '25'
   | '33'
   | '40'

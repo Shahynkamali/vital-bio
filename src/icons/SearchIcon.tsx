@@ -5,6 +5,7 @@ const SearchIcon: FC<IconProps> = ({
   width = 24,
   height = 25,
   color = 'white',
+  className,
 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -12,6 +13,7 @@ const SearchIcon: FC<IconProps> = ({
     height={height}
     viewBox="0 0 24 25"
     fill="none"
+    className={className}
   >
     <mask
       id="mask0_2104_5986"

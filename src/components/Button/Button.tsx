@@ -11,12 +11,14 @@ type ButtonColor = 'sky' | 'sunset' | 'rose' | 'neutral';
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   isIcon?: boolean;
   color?: ButtonColor;
+  inverted?: boolean;
   children: ReactNode;
 }
 
 const Button: FC<Props> = ({
   isIcon = false,
   color = 'sky',
+  inverted = false,
   children,
   className,
   ...rest
@@ -27,6 +29,7 @@ const Button: FC<Props> = ({
       styles.button,
       isIcon ? styles.iconButton : styles.textButton,
       styles[`color-${color}`],
+      inverted && styles.inverted,
       className
     )}
     {...rest}

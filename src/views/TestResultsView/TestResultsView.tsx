@@ -1,19 +1,53 @@
 import React from 'react';
-import { Wrapper, Column, Columns } from '@components';
+import { Column, Columns, Wrapper } from '@components';
 import type { FC } from 'react';
-import { Sidebar } from '@layouts';
+import { ButtonsBar, Sidebar } from '@layouts';
+import { useBreakpoints } from '@hooks/useBreakpoints';
 import { PatientInformationBox } from 'src/views/TestResultsView/PatientInformationBox';
 import { RangeBox } from 'src/views/TestResultsView/RangeBox';
 import { TestResults } from 'src/views/TestResultsView/TestResults/TestResults';
+
 import testresults from './testresult.json';
 
 const TestResultsView: FC = () => {
+  const breakpoints = useBreakpoints();
+
+  const isTablet = breakpoints.lg.lessThan;
+
+  const handleBackClick = () => {
+    // Handle back navigation
+  };
+
+  const handleSearch = (value: string) => {
+    console.log(value);
+  };
+
+  const handleFilter = () => {
+    // Handle filter action
+  };
+
+  const handleRerun = () => {
+    // Handle rerun action
+  };
+
+  const handleExport = () => {
+    // Handle export action
+  };
   return (
     <Wrapper>
       <Sidebar />
-      <Wrapper>
-        <Columns>
-          <Column width="40">
+      <Columns direction="column">
+        <Column width="100">
+          <ButtonsBar
+            onBackClick={handleBackClick}
+            onSearch={handleSearch}
+            onFilter={handleFilter}
+            onRerun={handleRerun}
+            onExport={handleExport}
+          />
+        </Column>
+        <Columns hasPadding justifyContent="center">
+          <Column width={isTablet ? '75' : '40'}>
             <Columns direction="column">
               <Column width="100">
                 <PatientInformationBox patient={testresults.patient} />
@@ -45,11 +79,11 @@ const TestResultsView: FC = () => {
               </Column>
             </Columns>
           </Column>
-          <Column width="auto">
+          <Column width={isTablet ? '75' : 'auto'}>
             <TestResults testResults={testresults.testResults} />
           </Column>
         </Columns>
-      </Wrapper>
+      </Columns>
     </Wrapper>
   );
 };

@@ -31,7 +31,7 @@ const Navigation: FC = () => {
 
   return (
     <Wrapper>
-      <Columns direction={isTablet ? 'column' : 'row'}>
+      <Columns hasPadding direction={isTablet ? 'column' : 'row'}>
         <Column width="25">
           <Text
             variant={isTablet ? 'body' : 'h3'}

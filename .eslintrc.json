@@ -17,6 +17,7 @@
   },
   "plugins": ["@typescript-eslint", "react", "prettier"],
   "rules": {
+    "@typescript-eslint/no-unused-vars": "warn",
     "no-plusplus": "off",
     "no-else-return": "off",
     "react/no-array-index-key": "off",
